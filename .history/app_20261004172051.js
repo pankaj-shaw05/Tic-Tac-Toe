@@ -87,6 +87,7 @@ const gameRect = game.getBoundingClientRect();
 const firstRect = firstBox.getBoundingClientRect();
 const lastRect = lastBox.getBoundingClientRect();
 
+// First box ke center ka position
 const startX =
     firstRect.left +
     firstRect.width / 2 -
@@ -97,6 +98,7 @@ const startY =
     firstRect.height / 2 -
     gameRect.top;
 
+// Last box ke center ka position
 const endX =
     lastRect.left +
     lastRect.width / 2 -
@@ -107,6 +109,7 @@ const endY =
     lastRect.height / 2 -
     gameRect.top;
 
+// Line ki length calculate karna
 const dx = endX - startX;
 const dy = endY - startY;
 
@@ -114,10 +117,12 @@ const length = Math.sqrt(
     dx * dx + dy * dy
 );
 
+// Line ka angle calculate karna
 const angle =
     Math.atan2(dy, dx) *
     (180 / Math.PI);
 
+// Winning line create karna
 const line = document.createElement("div");
 
 line.classList.add("winning-line");
@@ -133,6 +138,7 @@ line.style.transform =
 
 game.appendChild(line);
 
+// Winning line animation
 line.animate(
     [
         {
@@ -155,8 +161,10 @@ line.animate(
 
 const showWinner = (winner, patternIndex) => {
 
+// Game ko stop karna
 disableBoxes();
 
+// Pehle winning line draw hogi
 drawWinningLine(
     winPatterns[patternIndex]
 );

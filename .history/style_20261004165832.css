@@ -38,7 +38,7 @@ background-color: #ffffc7;
 cursor: pointer;
 }
 
-
+/* O colour */
 .box.o {
 color: #e63946;
 }
@@ -48,6 +48,7 @@ color: #e63946;
 color: #2563eb;
 }
 
+/* Winning line */
 .winning-line {
 position: absolute;
 height: 5px;
@@ -59,6 +60,7 @@ z-index: 10;
 transition: transform 0.5s ease;
 }
 
+/* Line positions */
 .line-row-1 {
 width: 100%;
 top: 16.5%;

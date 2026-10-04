@@ -87,6 +87,7 @@ const gameRect = game.getBoundingClientRect();
 const firstRect = firstBox.getBoundingClientRect();
 const lastRect = lastBox.getBoundingClientRect();
 
+// First box ke center ka position
 const startX =
     firstRect.left +
     firstRect.width / 2 -
@@ -97,6 +98,7 @@ const startY =
     firstRect.height / 2 -
     gameRect.top;
 
+// Last box ke center ka position
 const endX =
     lastRect.left +
     lastRect.width / 2 -
@@ -107,6 +109,7 @@ const endY =
     lastRect.height / 2 -
     gameRect.top;
 
+// Line ki length calculate karna
 const dx = endX - startX;
 const dy = endY - startY;
 
@@ -133,6 +136,7 @@ line.style.transform =
 
 game.appendChild(line);
 
+// Winning line animation
 line.animate(
     [
         {

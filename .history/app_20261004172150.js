@@ -87,6 +87,7 @@ const gameRect = game.getBoundingClientRect();
 const firstRect = firstBox.getBoundingClientRect();
 const lastRect = lastBox.getBoundingClientRect();
 
+// First box ke center ka position
 const startX =
     firstRect.left +
     firstRect.width / 2 -

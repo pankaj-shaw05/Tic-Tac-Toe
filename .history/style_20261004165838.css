@@ -38,7 +38,7 @@ background-color: #ffffc7;
 cursor: pointer;
 }
 
-
+/* O colour */
 .box.o {
 color: #e63946;
 }
@@ -59,6 +59,7 @@ z-index: 10;
 transition: transform 0.5s ease;
 }
 
+/* Line positions */
 .line-row-1 {
 width: 100%;
 top: 16.5%;
